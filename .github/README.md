@@ -1,11 +1,10 @@
-# DragonRider
+Dragon scene when warping between worlds with `/warp`
 
-<div align="center">
-  [![Discord][discord]][discord-url]
-</div>
-
-<p align="center">A useful plugin..</p>
-
-<!-- BADGES -->
-[discord]: https://img.shields.io/discord/717790645900673084.svg
-[discord-url]: https://discord.gg/4afedcG
+```yml
+sceneDuration: 5
+blacklistedWorlds:
+- island_of_death
+- pink_fluffy_mountain
+title: Title
+subtitle: SubTitle
+```
