@@ -1,0 +1,11 @@
+name: DragonRider
+version: "0.1"
+main: com.github.valkyrienyanko.dragonrider.DragonRider
+commands:
+  help:
+    description: Displays helpful information.
+    aliases: [h]
+    permission: dragonrider.help
+    usage: Please simply type /help to display the help
+  warp:
+    description: Warp to the specified world
