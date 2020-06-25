@@ -3,6 +3,7 @@ package com.github.valkyrienyanko.dragonrider;
 import com.github.valkyrienyanko.dragonrider.commands.CmdHelp;
 import com.github.valkyrienyanko.dragonrider.commands.CmdWarp;
 import com.github.valkyrienyanko.dragonrider.configs.ConfigManager;
+import com.github.valkyrienyanko.dragonrider.listeners.ListenerPlayerJoin;
 import org.bukkit.Bukkit;
 import org.bukkit.WorldCreator;
 import org.bukkit.WorldType;
@@ -60,6 +61,7 @@ public class DragonRider extends JavaPlugin {
 
     private void registerListeners() {
         PluginManager pm = Bukkit.getPluginManager();
+        pm.registerEvents(new ListenerPlayerJoin(), this);
     }
 
     private void registerCommands() {

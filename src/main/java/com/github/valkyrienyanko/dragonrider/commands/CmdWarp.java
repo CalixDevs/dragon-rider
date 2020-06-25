@@ -34,6 +34,11 @@ public class CmdWarp extends Cmd {
             return true;
         }
 
+        if (args[0].equals("dragon_rider")) {
+            sender.sendMessage("You cannot warp to the dragon rider world!");
+            return true;
+        }
+
         Player player = (Player) sender;
 
         if (player.getWorld().getName().equals("dragon_rider")) {
